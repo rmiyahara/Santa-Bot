@@ -5,15 +5,18 @@ This bot utilizes Python and its email package to read the contents of an Excel 
 
 This bot was originally made for UCLA's Kyodo Taiko as they run a Secret Santa every year, but feel free to use this with your own friends.
 
-# Running the bot
+# Running the Bot
 Make sure your files are correctly configured. If you are unsure what to change, refer to the "Files" section of the readme.
 
 To run the bot, make sure you have Pip3 and Python3 installed on your matchine. Then run the following.
 > pip3 install xlrd
+
 > pip3 install smtplib
+
 > python3 main.py
 
-## Files
+
+# Files
 ### main.py
 This is the file which contains your "main" function. There isn't much in there, but you will call this script to run the bot.
 
