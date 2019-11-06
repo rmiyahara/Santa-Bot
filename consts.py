@@ -5,5 +5,5 @@ col_emails = 3 # Column value which holds emails in the file (A = 0, B = 1, C = 
 
 email_file = "email_message.txt"
 subject = "[Kyodo] Your Secret Santa Assignment"
-host_email = "hohoitsryan@gmail.com"
+host_email = "hohohoitsryan@gmail.com"
 host_password = "hoeshoeshoes"
