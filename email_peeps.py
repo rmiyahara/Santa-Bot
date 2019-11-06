@@ -5,6 +5,7 @@ import consts
 
 def send(send_to, sent_to_email, their_person):
     print(send_to + " got " + their_person) # For testing
+
     email_text = """\
 From: %s
 To: %s
@@ -16,6 +17,7 @@ You are %s's Secret Santa this year. Get them something nice, or not, I'm not yo
 Love,
 HoHoHoItsRyan
     """ % (consts.host_email, sent_to_email, consts.subject, send_to, their_person)
+    
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
