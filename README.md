@@ -20,7 +20,7 @@ To run the bot, make sure you have Pip3 and Python3 installed on your matchine. 
 ### main.py
 This is the file which contains your "main" function. There isn't much in there, but you will call this script to run the bot.
 
-### consts.py
+### config.py
 Holds all the configuration values. If you change a file, this one will be it. The first few values effect the input while the ones at the end effect the email parameters. I have added comments to specify which is which.
 
 ### read_sheet.py

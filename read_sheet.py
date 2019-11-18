@@ -1,5 +1,5 @@
 import xlrd
-import consts
+import config
 
 # Takes in the name of a file and returns a list of the names in column A
 # without class names and a dictionary where a person's name is the key and
@@ -7,7 +7,7 @@ import consts
 def sheet_to_list():
     # Set up Excel sheet
     loc = "./"
-    path = loc + consts.file_name # Path to the file
+    path = loc + config.file_name # Path to the file
     wb = xlrd.open_workbook(path) 
     sheet = wb.sheet_by_index(0) 
     sheet.cell_value(0, 0)
@@ -16,9 +16,9 @@ def sheet_to_list():
     emails = {} # Holds returned value
 
     for i in range(1, sheet.nrows): # Skips the label row
-        if(sheet.cell_value(i, consts.col_emails) != ""): # Checks for class names
-            names.append(sheet.cell_value(i, consts.col_names))
-            emails[sheet.cell_value(i, consts.col_names)] = sheet.cell_value(i, consts.col_emails)
+        if(sheet.cell_value(i, config.col_emails) != ""): # Checks for class names
+            names.append(sheet.cell_value(i, config.col_names))
+            emails[sheet.cell_value(i, config.col_names)] = sheet.cell_value(i, config.col_emails)
     
     #print(names) # Testing
     return names, emails
